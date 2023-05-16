@@ -1,0 +1,8 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs></defs>
+  <g transform="matrix(1.111111, 0, 0, 1.111111, 33.646282, 22.496086)" fill="#A50000">
+    <circle xmlns="http://www.w3.org/2000/svg" cx="150" cy="50" r="50"></circle>
+    <circle xmlns="http://www.w3.org/2000/svg" cx="150" cy="160" r="50" style="fill: rgb(0, 200, 8);"></circle>
+    <circle xmlns="http://www.w3.org/2000/svg" cx="150" cy="270" r="50" style="fill: rgb(50, 50, 250);"></circle>
+  </g>
+</svg>
