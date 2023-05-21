@@ -20,6 +20,10 @@ a{
     color: white;
 }
 
+a:hover{
+    color: var(--complementary);
+}
+
 a:focus{
     color:white;
 }
