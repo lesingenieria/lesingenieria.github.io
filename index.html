@@ -10,61 +10,58 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;500;700;900&family=Roboto:wght@300;500;700;900&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700;900&family=Raleway:wght@300;500;700;900&display=swap" rel="stylesheet">    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>    
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="static/css/styles.css">
     <title>LES Ingeniería</title>
 </head>
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="10">
-    <header class="w-100">
-        <nav id="nav" class="navbar ps-3 py-2 navbar-expand-lg bg-transparent navbar-dark fixed-top" style="transition: all 0.4s">
-            <div class="container-fluid">
+    <header class="w-100 d-flex justify-content-center" style="opacity:0">
+        <nav id="nav" class="navbar ps-3 py-3 navbar-expand-lg bg-transparent navbar-light fixed-top" style="transition: all 0.4s">
+            <div class="container">
               <a class="navbar-brand" href="#">
-                <img id="logonav" src="static/img/leslogo.png" alt="Logo" height="45" class="d-inline-block align-text-top" style="transition: all 0.4s">
+                <img id="logonav" src="static/img/leslogovector.svg" alt="Logo" height="60" class="d-inline-block align-text-top" style="transition: all 0.4s">
               </a>
               <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="offcanvas offcanvas-bottom h-100 w-100 text-bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas offcanvas-bottom h-100 w-100" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header w-100 pt-5">
-                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="d-none d-lg-block offcanvas-body">
-                  <ul class="navbar-nav justify-content-start ms-5 flex-grow-1 pe-3">
+                  <ul class="navbar-nav justify-content-end ms-5 flex-grow-1 pe-3">
                     <li class="nav-item mx-4">
-                      <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
+                      <a class="nav-link" href="#">LES</a>
                     </li>
                     <li class="nav-item mx-4">
                       <a class="nav-link" href="#servicios">Servicios</a>
                     </li>
-                    <li class="nav-item mx-4">
-                      <a class="nav-link" href="#">LES</a>
-                    </li>
                     <li class="nav-item mx-4 dropdown">
-                      <a class="nav-link dropdown-toggle" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#">Proyectos</a>
-                      <ul class="dropdown-menu dropdown-menu-dark border border-2 border-danger border-top-0 border-start-0 border-end-0" aria-labelledby="navbarDarkDropdownMenuLink">
+                      <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#">Proyectos</a>
+                      <ul class="dropdown-menu border border-2 border-danger border-top-0 border-start-0 border-end-0" aria-labelledby="navbarDarkDropdownMenuLink">
                         <li><h6 class="dropdown-header">Nuestros últimos proyectos</h6></li>
                         <li><a class="dropdown-item" href="#">Hermes Bolipesk</a></li>
                         <li><a class="dropdown-item" href="#">Desarrollo</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
                       </ul>
                     </li>
                     <li class="nav-item mx-4">
-                      <a class="nav-link" href="#">Contacto</a>
+                      <a class="nav-link" href="#">Trabaja con nosotros</a>
+                    </li>
+                    <li class="nav-item mx-4">
+                      <a class="nav-link btn btn-red" href="#">Contacto</a>
                     </li>
                   </ul>
                 </div>
                 <div class="d-lg-none d-block offcanvas-body">
                   <ul class="navbar-nav justify-content-center align-items-center">
                     <li class="nav-item">
-                      <h2 style="font-weight: 700;"><a class="nav-link active" aria-current="page" href="#">INICIO</a></h2>
-                    </li>
-                    <li class="nav-item">
                       <h2 style="font-weight: 700;"><a class="nav-link" href="#">SERVICIOS</a></h2>
                     </li>
                     <li class="nav-item">
-                      <h2 style="font-weight: 700;"><a class="nav-link" href="#">CONÓCENOS</a></h2>
+                      <h2 style="font-weight: 700;"><a class="nav-link" href="#">LES</a></h2>
                     </li>
                     <li class="nav-item">
                       <h2 style="font-weight: 700;"><a class="nav-link" href="#">PROYECTOS</a></h2>
@@ -78,34 +75,64 @@
             </div>
           </nav>
     </header>
-    <section id="inicio" class="bg-transparent m-0" style="height: 100vh; ">
-      <div class="container-fluid h-100">
-        <div class="row h-100 position-relative" style="overflow-y: hidden">
-          <div class="d-sm-none d-block h-100 w-50 position-absolute top-0 start-0" style="background-color:rgba(27,27,27,1)"></div>
-          <div class="position-absolute h-100 w-50" style="transform: rotate(15deg) translateY(110px); background-image: url('static/img/waves.svg'); background-size:contain; background-repeat: no-repeat; background-position:bottom;"></div>
-          <div class="position-absolute w-50 h-100 end-0 top-0" style="background-image: url('static/img/iothouse.png'); background-size: auto; background-position:left center;"></div>
-          <div class="d-sm-none d-block position-absolute h-100 start-0 top-0" style="opacity: 0.5; background-image: url('static/img/iothouse.png'); background-size: auto; background-position:left top; background-repeat: no-repeat;"></div>
-          <div class="col-md-6 d-flex justify-content-center align-items-start flex-column text-light" style="padding-left: 10%; z-index: 1">
-              <h1 class="mb-0" style="font-weight: 900;">CONECTAMOS LA TECNOLOGÍA</h1><h1 class="mb-4" style="font-weight: 900;"> CON TU <span class="word text-danger">NEGOCIO</span></h1>
-              <small class="d-none d-sm-flex mb-2"style="color: rgb(198, 198, 198)"> Somos expertos en soluciones tecnológicas para empresas, 
-                ofreciendo servicios de digitalización, desarrollo de software, 
-                consultoría y mucho más. Nuestra misión es ayudarte a aprovechar las oportunidades que ofrece el mundo digital 
-                y mejorar la eficiencia de tu empresa. Nos enorgullece ofrecer soluciones personalizadas para cada cliente 
-                y garantizar una experiencia de usuario excepcional. 
-                Únete a nuestra larga lista de clientes satisfechos y toma el control de tu negocio en línea hoy mismo.</small>
-                <small class="mb-4"><strong>¡Pónte en contacto con nosotros hoy mismo para llevar tu negocio al siguiente nivel!</strong></small>
-                <button class="btn btn-outline-light bright">SOLICITA PRESUPUESTO</button>
-          </div>
-        </div>
+    <section id="portada" class="bg-transparent m-0" style="height:100vh">
+      <div class="container h-100 d-flex justify-content-center align-items-center position-relative">
+        <svg version="1.1" id="svg9" class="w-50" viewBox="0 0 1500 500" sodipodi:docname="leslogovector.svg" inkscape:version="1.2.2 (732a01da63, 2022-12-09)" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+          <defs id="defs13">
+            <linearGradient id="linearGradient8525" inkscape:swatch="solid">
+              <stop style="stop-color:#282828;stop-opacity:1;" offset="0" id="stop8523"></stop>
+            </linearGradient>
+            <linearGradient id="linearGradient6557" inkscape:swatch="solid">
+              <stop style="stop-color:#000000;stop-opacity:1;" offset="0" id="stop6555"></stop>
+            </linearGradient>
+            <linearGradient inkscape:collect="always" xlink:href="#linearGradient8525" id="linearGradient8527" x1="265.25607" y1="251.99363" x2="1436.0589" y2="251.99363" gradientUnits="userSpaceOnUse"></linearGradient>
+          </defs>
+          <sodipodi:namedview id="namedview11" pagecolor="#ffffff" bordercolor="#000000" borderopacity="0.25" inkscape:showpageshadow="2" inkscape:pageopacity="0" inkscape:pagecheckerboard="0" inkscape:deskcolor="#d1d1d1" showgrid="false" inkscape:zoom="1.02" inkscape:cx="213.72549" inkscape:cy="92.647059" inkscape:window-width="3200" inkscape:window-height="1261" inkscape:window-x="-9" inkscape:window-y="-9" inkscape:window-maximized="1" inkscape:current-layer="g15"></sodipodi:namedview>
+          <g inkscape:groupmode="layer" inkscape:label="Image" id="g15">
+            <path style="fill: rgb(40, 40, 40); stroke-width: 5; fill-opacity: 1; paint-order: markers; stroke: url(&quot;#linearGradient8527&quot;); fill-rule: evenodd;" d="M 266.25607,252.00031 V 101.32333 h 21.82704 21.82704 v 129.55404 129.55404 h 118.99257 118.99257 v 21.12294 21.12294 H 407.07568 266.25607 Z m 371.76377,-0.006 V 101.31207 l 170.74384,0.35768 170.74378,0.35768 0.38866,21.47499 0.38881,21.47499 H 830.97939 681.67392 v 42.94998 42.94998 h 131.6664 131.66634 v 21.82704 21.82704 H 813.34032 681.67392 v 42.94998 42.94998 h 149.26885 149.26879 v 21.12294 21.12294 H 809.11573 638.01984 Z m 482.54156,147.76243 c -16.9386,-5.82679 -30.1709,-17.76095 -38.5975,-34.81111 -4.4806,-9.06585 -5.2168,-12.01328 -5.7414,-22.98477 l -0.6017,-12.58536 21.6266,0.38966 21.6267,0.38966 0.8704,5.36424 c 1.2068,7.43767 7.9655,16.49849 15.4312,20.68739 l 6.2743,3.52049 h 114.0639 114.0639 l 6.7205,-3.95038 c 3.6962,-2.17271 8.4489,-6.5593 10.5614,-9.74799 3.6974,-5.58083 3.8579,-6.60213 4.2912,-27.3144 0.3735,-17.85236 0.049,-22.36202 -1.905,-26.47997 -3.1807,-6.70276 -11.9458,-14.36995 -18.5123,-16.19337 -3.5865,-0.9959 -43.646,-1.5036 -120.1484,-1.52271 -124.6227,-0.0311 -124.163,-0.006 -139.7149,-7.8859 -8.8906,-4.50522 -21.7134,-17.12642 -26.8955,-26.47284 -7.5225,-13.56733 -8.2718,-18.91703 -7.7653,-55.43987 l 0.4635,-33.40558 5.1795,-10.59317 c 6.641,-13.58191 19.496,-26.29543 33.1064,-32.74193 l 9.5928,-4.54357 h 130.9622 130.9622 l 9.5173,4.50827 c 23.1122,10.94799 39.0655,35.03637 39.0655,58.98601 v 9.02782 h -21.6416 -21.6417 l -0.769,-5.73349 c -1.0667,-7.95295 -6.7556,-15.91757 -14.7083,-20.59234 l -6.7205,-3.95039 H 1255.5139 1141.45 l -5.8077,3.10669 c -7.1805,3.84105 -12.638,10.16673 -14.687,17.02357 -0.9369,3.13528 -1.3734,13.36554 -1.0936,25.63611 0.4578,20.08501 0.5344,20.51669 4.69,26.40309 2.5709,3.64193 6.9508,7.36243 11.1899,9.50532 l 6.9655,3.52108 h 115.7075 c 71.5744,0 118.6006,0.53994 123.2927,1.41563 19.8172,3.69849 38.1656,18.24631 47.397,37.57946 l 5.2505,10.99587 0.447,32.87974 c 0.4064,29.90075 0.1857,33.72834 -2.4351,42.24589 -3.458,11.23777 -7.2176,17.62851 -15.4437,26.25179 -8.4149,8.82112 -16.3924,14.06648 -26.6467,17.52093 -8.483,2.85773 -10.9369,2.90975 -135.0701,2.86345 -122.8376,-0.0459 -126.6634,-0.12744 -134.6448,-2.87302 z" id="path229" sodipodi:nodetypes="ccccccccccccccccccccccccccccccccccccccssscccsscccssssssssscsscccsscccsscccssssscssscssssss" class="svg-elem-1"></path>
+            <circle style="fill: rgb(200, 0, 0); fill-opacity: 1; stroke-width: 1.28073;" id="path330" cx="130.30846" cy="145.34508" r="51.49564" class="svg-elem-2"></circle>
+            <circle style="fill: rgb(0, 200, 0); fill-opacity: 1; stroke-width: 1.28073;" id="path330-4" cx="130.30846" cy="250.04474" r="51.49564" class="svg-elem-3"></circle>
+            <circle style="fill: rgb(0, 0, 200); fill-opacity: 1; stroke-width: 1.28073;" id="path330-1" cx="130.30846" cy="354.50037" r="51.49564" class="svg-elem-4"></circle>
+          </g>
+        </svg>
+        <p class="position-absolute bottom-0 mb-5 text-red" style="font-size:1rem">Desliza para conocernos</p>
       </div>
     </section>
+    <section id="inicio" class="bg-transparent m-0 position-relative" style="height: 100vh; ">
+      <div style="z-index: 0; background: linear-gradient( to bottom, rgba(255,255,255,0.9), rgba(40,40,40,0.6) 30%), url(static/img/backgroundportada.jpg); background-size:cover; background-position: bottom" class="position-absolute top-0 start-0 w-100 h-100"></div> 
+      <div class="container h-100">
+          <div class="d-flex justify-content-center align-items-center flex-column h-100 w-100" style="z-index: 1">            
+              <h1 class="mb-5 text-center" style="font-weight: 900; z-index:1; color:white; text-shadow: 0px 0px 10px rgba(0,0,0,0.5)">Conectamos la tecnología con tu <br><span class="word text-red" style="color:var(--complementary); font-weight: 700; font-size: 1.5em">NEGOCIO</span></h2>
+          </div>
+      </div>
+      <img class="position-absolute bottom-0 w-100" style="height: 30vh" src="static/img/waves-white.svg">
+    </section>
 
-    <section id="servicios" class="text-dark py-5" style="background-color: snow;">
+    <!--
+    <p class="d-none d-sm-flex mb-2"style="color: rgb(20, 20, 20)"> Somos expertos en soluciones tecnológicas para empresas, 
+      ofreciendo servicios de digitalización, desarrollo de software, 
+      consultoría y mucho más. Nuestra misión es ayudarte a aprovechar las oportunidades que ofrece el mundo digital 
+      y mejorar la eficiencia de tu empresa. Nos enorgullece ofrecer soluciones personalizadas para cada cliente 
+      y garantizar una experiencia de usuario excepcional. </p>
+      <small class="mb-4"><strong>¡Pónte en contacto con nosotros hoy mismo para llevar tu negocio al siguiente nivel!</strong></small>
+      <button class="btn btn-red-outline"><small>SOLICITA PRESUPUESTO</small></button>
+    -->
+    <section id="servicios" class="text-dark py-5" style="background-color: white">
       <div class="container">
       <div class="w-100 d-flex justify-content-center mt-3 mb-4 flex-column align-items-start">
-        <small class="mb-2 text-danger">NUESTROS SERVICIOS</small>
-        <h1 style="font-weight: 900">EVOLUCIONA CON NUESTRA TECNOLOGÍA</h1>
+        <small class="mb-2 text-red">EVOLUCIONA CON NUESTRA TECNOLOGÍA</small>
+        <h1 class="title" style="font-weight: 700">Nuestros servicios</h1>
       </div>
+
+      <div class="row h-100 gx-5 mt-5">
+        <img class="col-md-6" height="350" src="/static/img/servicesimg.svg">
+        <div class="col-md-6 d-flex flex-column justify-content-around" height="400">
+          <h1>Servicios y soluciones adaptados a tu necesidad</h1>
+          <p class=" desc">Ofrecemos servicios y soluciones tecnológicas adaptados a tus necesidades específicas. Nuestro objetivo es ayudarte a aprovechar al máximo la era digital y alcanzar el éxito en un mundo cada vez más tecnológico.</p>
+          <button class="btn btn-red-outline mt-3 w-50">VER SERVICIOS</button>
+      </div>
+    </div>
+      <!--
       <div class="row h-100 gy-5 gx-3 mt-5">
         <div class="col-md-4 d-flex justify-content-center flex-column align-items-center px-3">
           <h1 class="text-light rounded-circle p-4 pb-3" style="background-color: rgb(0, 45, 136);"><i class="bi bi-cloud"></i></h1>
@@ -138,15 +165,60 @@
           <p class="text-center" style="font-weight: 300">Nos encargamos de la planificación, diseño y ejecución de proyectos de electricidad de baja tensión, garantizando la seguridad y eficiencia energética de las instalaciones</p>
         </div>
       </div>
+      -->
       </div>
     </section>
 
-    <section id="empresas-trabajado" class="py-5 bg-light">
+    <section id="proyectodestacado" class="py-5" style="background-color: white">
       <div class="container">
-        <div class="w-100 d-flex justify-content-center mt-3 mb-5 flex-column align-items-center">
-          <small class="mb-2 text-danger text-center">CASOS DE ÉXITO</small>
-          <h2 class="text-center" style="font-weight: 900">CLIENTES QUE HAN MEJORADO SU NEGOCIO CON NOSOTROS</h2>
+        <div class="w-100 d-flex justify-content-center mt-3 mb-4 flex-column align-items-start">
+          <small class="mb-2 text-red">NOS SENTIMOS ORGULLOSOS</small>
+          <h1 class="title" style="font-weight: 700">Proyecto destacado</h1>
         </div>
+  
+        <div class="row h-100 gx-5 mt-5">
+          <div class="col-md-6 d-flex flex-column justify-content-around" height="400">
+            <h1>Hermes Bolipesk</h1>
+            <p class=" desc">Hermes Bolipesk es una plataforma web de gestión y visualización de datos de vehículos de transporte, desarrollada exclusivamente para la empresa Bolipesk. Integra también un sistema de localización de vehículos en tiempo real. </p>
+            <button class="btn btn-red-outline mt-3 w-50">VER MÁS PROYECTOS</button>
+        </div>
+
+        <img class="col-md-6" height="350" src="/static/img/HermesLogo.svg">
+    </section>
+
+    <section id="trabajaconnostros" class="py-5" style="background-color: white">
+      <div class="container">
+        <div class="w-100 d-flex justify-content-center mt-3 mb-4 flex-column align-items-start">
+          <small class="mb-2 text-red">ÚNETE AL EQUIPO</small>
+          <h1 class="title" style="font-weight: 700">Trabaja con nosotros</h1>
+        </div>
+  
+        <div class="row h-100 gx-5 mt-5">
+          <img class="col-md-6" height="300" src="/static/img/joinusimg.svg">
+          <div class="col-md-6 d-flex flex-column justify-content-around" height="400">
+            <h1>Crece con nosotros y proyecta tu desarrollo</h1>
+            <p class=" desc">¿A qué estás esperando?</p>
+            <button class="btn btn-red-outline mt-3 w-50">ÚNETE</button>
+        </div>
+
+    </section>
+
+    <section id="empresas-trabajado" class="py-5" style="background-color: white">
+      <div class="container">
+        <div class="w-100 d-flex justify-content-center mt-3 mb-4 flex-column align-items-start">
+          <small class="mb-2 text-red">CLIENTES QUE HAN MEJORADO SU NEGOCIO CON NOSOTROS</small>
+          <h1 class="title" style="font-weight: 700">Casos de éxito</h1>
+        </div>
+        <div class="companiesslider" style="height:30vh">
+          <div class="slide"><img src="static/img/bolipesklogo.png"></div>
+          <div class="slide"><img src="static/img/autransalogo.png"></div>
+          <div class="slide"><img src="static/img/mazueloslogo.png"></div>
+          <div class="slide"><img src="static/img/inmueblesurlogo.png"></div>
+          <div class="slide"><img src="static/img/gtdlogo.png"></div>
+          <div class="slide"><img src="static/img/autosurlogo.png"></div>
+          <div class="slide"><img src="static/img/ucclogo.png"></div>
+        </div>
+        <!--
         <div class="row align-items-center">
           <div class="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
             <img src="static/img/bolipesklogo.png" alt="Nombre de la empresa 1" class="img-fluid" >
@@ -170,15 +242,39 @@
             <img src="static/img/ucclogo.png" alt="Nombre de la empresa 6" class="img-fluid">
           </div>
         </div>
+        -->
       </div>
     </section>
+    
+    <div class="container-fluid m-0 p-0" style="background-color: white">
+      <img class="w-100 m-0" style="height: 30vh" src="static/img/wavesfooter.svg">
+    </div>
+
+    <footer class="pb-3" style="background-color: var(--main-red)">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-4 d-flex justify-content-center">
+              <img src="static/img/leslogovector.svg" height="60" style="filter: brightness(0) invert(1)">
+          </div>
+          <div class="row col-12 col-sm-4 d-flex justify-content-end align-items-end w-100 m-0">
+            <p class="col-12 col-md-4 text-white p-0 m-0 text-center">©LES Ingeniería 2023</p>
+            <a class="col-12 col-md-4 text-center" href="#">Política de cookies</a>
+            <a class="col-12 col-md-4 text-center" href="#">Aviso legal</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </body>
 
 
 <script>
+  let portada = false;
   const word = document.querySelector(".word");
   const wordsToChange = ["NEGOCIO", "HOGAR", "PROYECTO", "LOCAL", "IDEA", "EQUIPO", "OFICINA"];
-  const classToChange = ["text-danger", "text-success", "text-primary"]
+  const classToChange = ["text-red"]
   let selectedWord = wordsToChange[0];
   let selectedClass = classToChange[0];
   let status = "adding";
@@ -190,7 +286,7 @@
         if(word.innerHTML.length !== selectedWord.length){
           word.innerHTML = selectedWord.slice(0, word.innerHTML.length+1);
         }else{
-          setTimeout(function(){status = "deleting"}, 500);
+          setTimeout(function(){status = "deleting"}, 1500);
         }
         break;
       case "changing":
@@ -199,7 +295,7 @@
           i = Math.floor(Math.random()*wordsToChange.length)
         }while(recentI===i);
         selectedWord = wordsToChange[i];
-        let newClass = classToChange[Math.floor(Math.random()*3)];
+        let newClass = classToChange[Math.floor(Math.random()*1)];
         word.classList.replace(selectedClass, newClass);
         selectedClass = newClass;
         status = "adding";
@@ -214,20 +310,56 @@
     }
   }, 100);
 
+  const header = document.querySelector("header");
   const nav = document.querySelector("#nav");
   const logonav = document.querySelector("#logonav");
   const navoptions = document.querySelector("#navoptions");
+  const iniciosection = document.querySelector("#inicio");
+  const portadasection = document.querySelector("#portada");
 
   document.addEventListener("scroll", function(e){
-    if(window.scrollY <= 10){
-      nav.classList.replace("bg-dark", "bg-transparent");
-      nav.classList.remove("shadow");
-      logonav.height = "45";
-    }else{
-      nav.classList.replace("bg-transparent", "bg-dark");
-      nav.classList.add("shadow");
-      logonav.height = "30";
+    console.log(window.scrollY);
+    if(window.scrollY >= (iniciosection.offsetTop-20) && !portada){
+      portadasection.classList.add("d-none");
+      window.scrollTo(0, 0);
+      portada=true;
+      header.style.opacity = 1;
     }
+    if(window.scrollY <= 10){
+      if(!portada){
+        window.scrollTo(0, iniciosection.offsetTop);
+      }
+      nav.classList.replace("bg-light", "bg-transparent");
+      nav.classList.remove("shadow");
+      logonav.height = portada?"50":"0";
+    }else{
+      nav.classList.replace("bg-transparent", "bg-light");
+      nav.classList.add("shadow");
+      logonav.height = "45";
+    }
+  });
+
+  $(document).ready(function(){
+    $('.companiesslider').slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 2000,
+      arrows: false,
+      dots: false,
+      pauseOnHover: false,
+      responsive: [{
+					breakpoint: 768,
+					settings: {
+						slidesToShow: 3
+					}
+				}, {
+					breakpoint: 520,
+					settings: {
+						slidesToShow: 1
+					}
+				}]
+    });
   });
 </script>
 </html>
