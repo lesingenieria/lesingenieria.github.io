@@ -24,6 +24,10 @@ a:hover{
     color: var(--complementary);
 }
 
+.nav-link:hover, .navbar-nav .nav-link.active{
+    color: var(--main-red);
+}
+
 a:focus{
     color:white;
 }
@@ -63,6 +67,10 @@ p{
 
 .slick-initialized .slick-slide{
     display:flex;
+}
+
+section{
+    padding-top: 80px;
 }
 
 .slide{
