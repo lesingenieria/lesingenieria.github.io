@@ -18,68 +18,157 @@
         <title>Conócenos - LES Ingeniería</title>
     </head>
 <body>
-<header class="w-100 d-flex justify-content-center" style="opacity:1">
-        <nav id="nav" class="navbar ps-3 py-3 navbar-expand-lg bg-transparent navbar-light fixed-top" style="transition: all 0.4s">
-            <div class="container">
-              <a class="navbar-brand" href="#">
-                <img id="logonav" src="static/img/leslogovector.svg" alt="Logo" height="60" class="d-inline-block align-text-top" style="transition: all 0.4s">
-              </a>
-              <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="offcanvas offcanvas-bottom h-100 w-100" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header w-100 pt-5">
-                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="d-none d-lg-block offcanvas-body">
-                  <ul class="navbar-nav justify-content-end ms-5 flex-grow-1 pe-3">
-                    <li class="nav-item mx-4">
-                      <a class="nav-link" href="us.html">LES</a>
-                    </li>
-                    <li class="nav-item mx-4">
-                      <a class="nav-link" href="#servicios">Servicios</a>
-                    </li>
-                    <li class="nav-item mx-4 dropdown">
-                      <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#">Proyectos</a>
-                      <ul class="dropdown-menu border border-2 border-danger border-top-0 border-start-0 border-end-0" aria-labelledby="navbarDarkDropdownMenuLink">
-                        <li><h6 class="dropdown-header">Nuestros últimos proyectos</h6></li>
-                        <li><a class="dropdown-item" href="#">Hermes Bolipesk</a></li>
-                        <li><a class="dropdown-item" href="#">Desarrollo</a></li>
-                      </ul>
-                    </li>
-                    <li class="nav-item mx-4">
-                      <a class="nav-link" href="#">Trabaja con nosotros</a>
-                    </li>
-                    <li class="nav-item mx-4">
-                      <a class="nav-link btn btn-red" href="#">Contacto</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="d-lg-none d-block offcanvas-body">
-                  <ul class="navbar-nav justify-content-center align-items-center">
-                    <li class="nav-item">
-                      <h2 style="font-weight: 700;"><a class="nav-link" href="#">SERVICIOS</a></h2>
-                    </li>
-                    <li class="nav-item">
-                      <h2 style="font-weight: 700;"><a class="nav-link" href="#">LES</a></h2>
-                    </li>
-                    <li class="nav-item">
-                      <h2 style="font-weight: 700;"><a class="nav-link" href="#">PROYECTOS</a></h2>
-                    </li>
-                    <li class="nav-item">
-                      <h2 style="font-weight: 700;"><a class="nav-link" href="#">CONTACTO</a></h2>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+  <header class="w-100 d-flex justify-content-center">
+    <nav id="nav" class="navbar ps-3 py-3 navbar-expand-lg bg-transparent navbar-light fixed-top" style="transition: all 0.4s">
+        <div class="container">
+          <a class="navbar-brand" href="/">
+            <img id="logonav" src="static/img/leslogovector.svg" alt="Logo" height="60" class="d-inline-block align-text-top" style="transition: all 0.4s">
+          </a>
+          <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-bottom h-100 w-100" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header w-100 pt-5">
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-          </nav>
-    </header>
+            <div class="d-none d-lg-block offcanvas-body">
+              <ul class="navbar-nav justify-content-end ms-5 flex-grow-1 pe-3">
+                <li class="nav-item mx-4">
+                  <a class="nav-link active" href="">LES</a>
+                </li>
+                <li class="nav-item mx-4">
+                  <a class="nav-link" href="#servicios">Servicios</a>
+                </li>
+                <li class="nav-item mx-4 dropdown">
+                  <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#">Proyectos</a>
+                  <ul class="dropdown-menu border-0 shadow" aria-labelledby="navbarDarkDropdownMenuLink">
+                    <li><h6 class="dropdown-header">Nuestros últimos proyectos</h6></li>
+                    <li><a class="dropdown-item" href="#">Hermes Bolipesk</a></li>
+                    <li><a class="dropdown-item" href="#">Desarrollo</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item mx-4">
+                  <a class="nav-link" href="#">Trabaja con nosotros</a>
+                </li>
+                <li class="nav-item mx-4">
+                  <a class="btn btn-red" href="#">Contacto</a>
+                </li>
+              </ul>
+            </div>
+            <div class="d-lg-none d-block offcanvas-body">
+              <ul class="navbar-nav justify-content-center align-items-center">
+                <li class="nav-item">
+                  <h2 style="font-weight: 700;"><a class="nav-link" href="#">SERVICIOS</a></h2>
+                </li>
+                <li class="nav-item">
+                  <h2 style="font-weight: 700;"><a class="nav-link active" href="us.html">LES</a></h2>
+                </li>
+                <li class="nav-item">
+                  <h2 style="font-weight: 700;"><a class="nav-link" href="#">PROYECTOS</a></h2>
+                </li>
+                <li class="nav-item">
+                  <h2 style="font-weight: 700;"><a class="nav-link" href="#">ÚNETE AL EQUIPO</a></h2>
+                </li>
+                <li class="nav-item">
+                  <h2 style="font-weight: 700;"><a class="nav-link" href="#">CONTACTO</a></h2>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+</header>
 
-    <section id="titulo" class="bg-transparent m-0">
-      
+    <section id="titulo" class="bg-transparent m-0 position-relative" style="height:100vh; transition: height 0.5s ease;">
+      <div class="position-absolute bottom-0 start-0 w-100 h-100" style="background-image: url(static/img/titulonosotros.jpg); background-size:cover; background-position:bottom right"></div>
+      <div style="z-index: 1; background: linear-gradient( to top, rgba(40,40,40, 0.3), rgba(230,230,230, 1)) 80%; margin: 0; padding: 0;" class="position-absolute top-0 start-0 w-100 h-100"></div>
+      <div class="text-center position-absolute top-50 start-50 translate-middle px-5 py-5 mt-5 mt-md-0 w-100" style="z-index:2">
+        <h1 class="text-center textup" style="font-weight: 700; color:white">Conoce LES Ingeniería</h1>
+        <p class="textup" style="color:white;"> Transformando el futuro a través de la innovación</p>
+      </div>
     </section>
+
+    <section id="trayectoria" style="background: white">
+      <div class="container">
+        <div class="w-100 d-flex justify-content-center mt-3 mb-4 flex-column align-items-start">
+          <small class="mb-2 text-red">EMPRENDIENDO EL FUTURO TECNOLÓGICO</small>
+          <h1 class="title" style="font-weight: 700">Nuestra trayectoria</h1>
+        </div>
+  
+        <div class="container row h-100 mt-5 mx-0">
+          <div class="col-12 d-flex flex-column justify-content-around" height="400">
+            <p class=" desc">Como una empresa joven y dinámica, LES Ingeniería ha irrumpido en el panorama tecnológico del Campo de Gibraltar con una pasión desbordante por la innovación. Nuestra historia se remonta a unos pocos años atrás, cuando un puñado de ideas creativas y apasionadas se unieron para hacer una diferencia en el mundo digital. Desde entonces, hemos impulsado la revolución tecnológica en nuestra región, desafiando los límites y abriendo nuevos horizontes. A pesar de nuestra corta existencia, hemos demostrado que la juventud no es un obstáculo para lograr grandes cosas. Estamos listos para enfrentar cualquier desafío y dejar nuestra huella en el mundo tecnológico.</p>
+          </div>
+          <img class="col-12 mt-md-5" height="350" src="/static/img/teamcollab.svg">
+        </div>
+    </section>
+
+    <section id="proposito" style="background: white">
+      <div class="container">
+        <div class="w-100 d-flex justify-content-center mt-1 mt-md-3 mb-4 flex-column align-items-start">
+          <small class="mb-2 text-red">ENCUENTRA TU SOLUCIÓN EN UN MUNDO DIGITAL</small>
+          <h1 class="title" style="font-weight: 700">Nuestro propósito</h1>
+        </div>
+  
+        <div class="container row h-100 mx-0">
+          <div class="col-12 col-md-6 d-flex flex-column justify-content-around pe-md-5" height="300">
+            <p class=" desc">Nuestra pasión por la innovación está impulsada por una ambición incansable y un afán constante de superación. Nos desafiamos a nosotros mismos y a los límites tecnológicos para encontrar soluciones creativas y efectivas para cada problema que se nos presenta. Somos una empresa joven y vibrante, impulsada por el deseo de marcar la diferencia en el mundo digital. No nos conformamos con la mediocridad, sino que nos esforzamos por alcanzar nuevas alturas y establecer nuevos estándares en la industria. Nuestro enfoque apasionado y nuestra mentalidad de crecimiento nos impulsa a explorar nuevas tecnologías, ampliar nuestros conocimientos y colaborar con nuestros clientes para lograr resultados excepcionales. Estamos aquí para convertir tus desafíos en oportunidades y acompañarte en cada paso de tu viaje hacia la excelencia tecnológica."</p>
+          </div>
+          <div class="col-12 col-md-6 ps-5 rounded-end" style="background-image: url(/static/img/creativity.jpg); height: 350px; background-size:cover; background-position: center">
+        </div>
+    </section>
+
+    <section id="valores" style="background: white">
+      <div class="container">
+        <div class="w-100 d-flex justify-content-center mt-1 mt-md-3 mb-4 flex-column align-items-start">
+          <small class="mb-2 text-red">COMPROMETIDOS CON LA EXCELENCIA TECNOLÓGICA</small>
+          <h1 class="title" style="font-weight: 700">Nuestros valores</h1>
+        </div>
+  
+        <div class="container row h-100 mx-0">
+          <div class="col-12 text-center mt-5">
+            <h1>Innovación · Ambición · Colaboración </h1>
+          </div>
+          <div class="col-12 d-flex flex-column justify-content-around mt-5" height="400">
+            <p class=" desc">En LES Ingeniería, nos guiamos por un conjunto de valores fundamentales que impulsan nuestra cultura empresarial y nos diferencian en el mundo tecnológico. La innovación es el núcleo de todo lo que hacemos. Buscamos constantemente nuevas ideas, enfoques y soluciones creativas para superar los desafíos tecnológicos. La ambición es el motor que impulsa nuestro progreso. Nos esforzamos por ir más allá de los límites convencionales, fijando metas audaces y trabajando incansablemente para alcanzarlas. La colaboración es fundamental en nuestra forma de trabajar. Fomentamos un entorno de trabajo colaborativo y multidisciplinario, donde todos los miembros del equipo aportan sus conocimientos y habilidades para lograr resultados excepcionales. Estos valores nos definen y nos inspiran a ser líderes en la industria, aportando soluciones innovadoras y transformadoras a nuestros clientes.</p>
+          </div>
+    </section>
+    <div class="container-fluid m-0 p-0" style="background-color: white">
+      <img class="w-100 m-0" style="height: 30vh" src="static/img/wavesfooter.svg">
+    </div>
+
+    <footer class="pb-3" style="background-color: var(--main-red)">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 d-flex justify-content-start">
+              <img src="static/img/leslogovector.svg" height="40" style="filter: brightness(0) invert(1)">
+          </div>
+          <div class="col-12 col-md-6 text-white fs-4 d-flex align-items-end justify-content-end">
+            <a href="#"><i class="bi bi-instagram me-3"></i></a>
+            <a href="#"><i class="bi bi-telephone"></i></a>
+          </div>
+          <div class="col-12 col-md-6 text-white d-flex align-items-end justify-content-start">
+            <p class="col-12 col-md-6 text-white ps-2 m-0 text-end text-md-start">©LES Ingeniería 2023</p>
+          </div>
+          <div class="row col-12 col-md-6 pe-0 d-flex justify-content-end align-items-end m-0">
+            <div class="col-md-6 text-end">
+              <a class="col-12 col-md-4 text-center pe-3 border border-top-0 border-start-0 border-bottom-0" href="#">Política de cookies</a>
+              <a class="col-12 col-md-4 text-center ps-3" href="#">Aviso legal</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script src="static/js/menu.js"></script>
 </body>
-</html>
+
+<script>
+  let titlesection = document.querySelector("#titulo");
+  document.addEventListener("scroll", function(e){
+    if(window.scrollY >= 10){
+      titulo.style.height = "50vh";
+    }
+  })
+</script>
+</html> 
