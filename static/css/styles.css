@@ -7,12 +7,20 @@
 
 html{
     background: white;
+    -webkit-font-smoothing: antialiased;
 }
 
 body{
-    background: linear-gradient(130deg, white 0%, rgb(200,200,200) 90%);
-    font-family: Roboto, sans-serif;
+    background: white;
+    font-family: 'Roboto', sans-serif;
     min-height: 100vh;
+}
+
+section{
+ padding: 100px 0;
+}
+section:nth-child(even){
+  background-color: rgb(245,245,245);
 }
 
 a{
@@ -69,7 +77,7 @@ a:focus{
 }
 
 h1, h2, .btn, .navbar{
-    font-family: "Raleway", sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 p{
@@ -165,7 +173,7 @@ section{
     display: inline-block;
     width: 3px;
     margin-left: 5px;
-    background-color: white;
+    background-color: black;
     height: 0.8em;
     animation:parpadeo 0.5s linear infinite;
 }

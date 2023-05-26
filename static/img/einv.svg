@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="100mm"
+   height="100mm"
+   viewBox="0 0 100 100"
+   version="1.1"
+   id="svg745"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   sodipodi:docname="einv.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview747"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.4841611"
+     inkscape:cx="245.59329"
+     inkscape:cy="215.27313"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="3191"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs742">
+    <inkscape:path-effect
+       effect="powerclip"
+       id="path-effect9865"
+       is_visible="true"
+       lpeversion="1"
+       inverse="true"
+       flatten="false"
+       hide_clip="false"
+       message="Utilice la regla de relleno parimpar en el diálogo &lt;b&gt;Relleno y borde&lt;/b&gt; si el resultado no está aplanada después de convertir el recorte en trayectos." />
+    <inkscape:path-effect
+       effect="powerclip"
+       id="path-effect7116"
+       is_visible="true"
+       lpeversion="1"
+       inverse="true"
+       flatten="false"
+       hide_clip="false"
+       message="Utilice la regla de relleno parimpar en el diálogo &lt;b&gt;Relleno y borde&lt;/b&gt; si el resultado no está aplanada después de convertir el recorte en trayectos." />
+    <inkscape:path-effect
+       effect="powerclip"
+       id="path-effect4792"
+       is_visible="true"
+       lpeversion="1"
+       inverse="true"
+       flatten="false"
+       hide_clip="false"
+       message="Utilice la regla de relleno parimpar en el diálogo &lt;b&gt;Relleno y borde&lt;/b&gt; si el resultado no está aplanada después de convertir el recorte en trayectos." />
+    <filter
+       id="mask-powermask-path-effect4752_inverse"
+       inkscape:label="filtermask-powermask-path-effect4752"
+       style="color-interpolation-filters:sRGB"
+       height="100"
+       width="100"
+       x="-50"
+       y="-50">
+      <feColorMatrix
+         id="mask-powermask-path-effect4752_primitive1"
+         values="1"
+         type="saturate"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         id="mask-powermask-path-effect4752_primitive2"
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0 "
+         in="fbSourceGraphic" />
+    </filter>
+    <filter
+       id="mask-powermask-path-effect4762_inverse"
+       inkscape:label="filtermask-powermask-path-effect4762"
+       style="color-interpolation-filters:sRGB"
+       height="100"
+       width="100"
+       x="-50"
+       y="-50">
+      <feColorMatrix
+         id="mask-powermask-path-effect4762_primitive1"
+         values="1"
+         type="saturate"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         id="mask-powermask-path-effect4762_primitive2"
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0 "
+         in="fbSourceGraphic" />
+    </filter>
+    <filter
+       id="mask-powermask-path-effect4778_inverse"
+       inkscape:label="filtermask-powermask-path-effect4778"
+       style="color-interpolation-filters:sRGB"
+       height="100"
+       width="100"
+       x="-50"
+       y="-50">
+      <feColorMatrix
+         id="mask-powermask-path-effect4778_primitive1"
+         values="1"
+         type="saturate"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         id="mask-powermask-path-effect4778_primitive2"
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0 "
+         in="fbSourceGraphic" />
+    </filter>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath9861">
+      <path
+         d="M 4.7211829,49.999903 V 10.131894 l 45.1759711,0.09464 45.175959,0.09464 0.10283,5.681924 0.102873,5.681924 H 55.775061 16.271323 v 11.363841 11.363849 h 34.836734 34.836719 v 5.775071 5.775071 H 51.108057 16.271323 v 11.363849 11.363849 h 39.494049 39.494034 v 5.588778 5.588778 H 49.990301 4.7211829 Z"
+         style="display:none;fill:#282828;fill-opacity:1;fill-rule:evenodd;stroke:url(#linearGradient8527);stroke-width:1.32292;stroke-dasharray:none;paint-order:markers fill stroke"
+         id="path9863" />
+      <path
+         id="lpe_path-effect9865"
+         style="fill:#282828;fill-opacity:1;fill-rule:evenodd;stroke:url(#linearGradient8527);stroke-width:1.32292;stroke-dasharray:none;paint-order:markers fill stroke"
+         class="powerclip"
+         d="M -5,-5 H 105 V 105 H -5 Z M 4.7211829,49.999903 V 89.868108 H 49.990301 95.259406 V 84.27933 78.690552 H 55.765372 16.271323 V 67.326703 55.962854 H 51.108057 85.944776 V 50.187783 44.412712 H 51.108057 16.271323 V 33.048863 21.685022 h 39.503738 39.503755 l -0.102873,-5.681924 -0.10283,-5.681924 -45.175959,-0.09464 -45.1759711,-0.09464 z" />
+    </clipPath>
+  </defs>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#ffffff;fill-opacity:0.99644125;fill-rule:evenodd;stroke-width:1.32292;paint-order:markers fill stroke"
+       id="rect3970"
+       width="100"
+       height="100"
+       x="0"
+       y="0"
+       clip-path="url(#clipPath9861)"
+       inkscape:path-effect="#path-effect9865"
+       d="M 0,0 H 100 V 100 H 0 Z" />
+  </g>
+</svg>

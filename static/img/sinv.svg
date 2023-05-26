@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="100mm"
+   height="100mm"
+   viewBox="0 0 100 100"
+   version="1.1"
+   id="svg745"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   sodipodi:docname="sinv.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview747"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.4841611"
+     inkscape:cx="245.59329"
+     inkscape:cy="215.27313"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="3191"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs742">
+    <inkscape:path-effect
+       effect="powerclip"
+       id="path-effect12095"
+       is_visible="true"
+       lpeversion="1"
+       inverse="true"
+       flatten="false"
+       hide_clip="false"
+       message="Utilice la regla de relleno parimpar en el diálogo &lt;b&gt;Relleno y borde&lt;/b&gt; si el resultado no está aplanada después de convertir el recorte en trayectos." />
+    <inkscape:path-effect
+       effect="powerclip"
+       id="path-effect9865"
+       is_visible="true"
+       lpeversion="1"
+       inverse="true"
+       flatten="false"
+       hide_clip="false"
+       message="Utilice la regla de relleno parimpar en el diálogo &lt;b&gt;Relleno y borde&lt;/b&gt; si el resultado no está aplanada después de convertir el recorte en trayectos." />
+    <inkscape:path-effect
+       effect="powerclip"
+       id="path-effect7116"
+       is_visible="true"
+       lpeversion="1"
+       inverse="true"
+       flatten="false"
+       hide_clip="false"
+       message="Utilice la regla de relleno parimpar en el diálogo &lt;b&gt;Relleno y borde&lt;/b&gt; si el resultado no está aplanada después de convertir el recorte en trayectos." />
+    <inkscape:path-effect
+       effect="powerclip"
+       id="path-effect4792"
+       is_visible="true"
+       lpeversion="1"
+       inverse="true"
+       flatten="false"
+       hide_clip="false"
+       message="Utilice la regla de relleno parimpar en el diálogo &lt;b&gt;Relleno y borde&lt;/b&gt; si el resultado no está aplanada después de convertir el recorte en trayectos." />
+    <filter
+       id="mask-powermask-path-effect4752_inverse"
+       inkscape:label="filtermask-powermask-path-effect4752"
+       style="color-interpolation-filters:sRGB"
+       height="100"
+       width="100"
+       x="-50"
+       y="-50">
+      <feColorMatrix
+         id="mask-powermask-path-effect4752_primitive1"
+         values="1"
+         type="saturate"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         id="mask-powermask-path-effect4752_primitive2"
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0 "
+         in="fbSourceGraphic" />
+    </filter>
+    <filter
+       id="mask-powermask-path-effect4762_inverse"
+       inkscape:label="filtermask-powermask-path-effect4762"
+       style="color-interpolation-filters:sRGB"
+       height="100"
+       width="100"
+       x="-50"
+       y="-50">
+      <feColorMatrix
+         id="mask-powermask-path-effect4762_primitive1"
+         values="1"
+         type="saturate"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         id="mask-powermask-path-effect4762_primitive2"
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0 "
+         in="fbSourceGraphic" />
+    </filter>
+    <filter
+       id="mask-powermask-path-effect4778_inverse"
+       inkscape:label="filtermask-powermask-path-effect4778"
+       style="color-interpolation-filters:sRGB"
+       height="100"
+       width="100"
+       x="-50"
+       y="-50">
+      <feColorMatrix
+         id="mask-powermask-path-effect4778_primitive1"
+         values="1"
+         type="saturate"
+         result="fbSourceGraphic" />
+      <feColorMatrix
+         id="mask-powermask-path-effect4778_primitive2"
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0 "
+         in="fbSourceGraphic" />
+    </filter>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath12091">
+      <path
+         d="M 14.33987,88.819696 C 9.8581985,87.278025 6.3571525,84.120445 4.1276156,79.609257 2.9421235,77.210584 2.7473365,76.430743 2.6085365,73.52787 l -0.1592,-3.329877 5.722038,0.103098 5.7220635,0.103097 0.230294,1.419289 c 0.3193,1.967883 2.107538,4.365225 4.082839,5.473538 l 1.660074,0.931463 h 30.179409 30.179404 l 1.778135,-1.045204 c 0.97795,-0.574863 2.235441,-1.735482 2.79437,-2.579156 0.978271,-1.476595 1.020731,-1.746814 1.13538,-7.226935 0.0988,-4.723437 0.01299,-5.916618 -0.504028,-7.006159 -0.84156,-1.773438 -3.160662,-3.802049 -4.898051,-4.284496 C 79.582335,55.82303 68.983259,55.688701 48.742002,55.683645 15.768912,55.675443 15.890541,55.682057 11.775767,53.597167 9.4234624,52.405161 6.0307625,49.065802 4.6596655,46.592895 2.6693376,43.003205 2.4710855,41.587764 2.6050965,31.924429 L 2.7277314,23.08587 4.0981405,20.283094 c 1.7570979,-3.593547 5.1583169,-6.957333 8.7594025,-8.66297 l 2.538095,-1.202152 h 34.650416 34.65041 l 2.518119,1.192813 c 6.115111,2.896655 10.33608,9.270039 10.33608,15.606715 v 2.38861 H 91.824664 86.098623 L 85.895164,28.089124 C 85.612933,25.984907 84.107745,23.877601 82.003593,22.640735 L 80.225458,21.595527 H 50.046054 19.866645 l -1.536621,0.821979 c -1.89984,1.016278 -3.343804,2.689947 -3.885934,4.504152 -0.247889,0.829543 -0.36338,3.5363 -0.289348,6.782888 0.121126,5.314159 0.141393,5.428374 1.240896,6.985817 0.680217,0.963594 1.839064,1.947977 2.960661,2.51495 l 1.842955,0.931619 h 30.614274 c 18.937393,0 31.379745,0.142859 32.621196,0.374552 5.243301,0.978559 10.097979,4.827669 12.540451,9.942899 l 1.389198,2.909324 0.118271,8.699431 c 0.107519,7.91124 0.0491,8.923956 -0.644289,11.177558 -0.914932,2.973327 -1.90966,4.66421 -4.086141,6.945786 -2.22645,2.333922 -4.337161,3.721756 -7.05028,4.635746 C 83.457473,89.578336 82.808215,89.5921 49.964639,89.57985 17.463858,89.567705 16.451615,89.546128 14.33987,88.819696 Z"
+         style="display:none;fill:#282828;fill-opacity:1;fill-rule:evenodd;stroke:url(#linearGradient8527);stroke-width:1.32292;stroke-dasharray:none;paint-order:markers fill stroke"
+         id="path12093" />
+      <path
+         id="lpe_path-effect12095"
+         style="fill:#282828;fill-opacity:1;fill-rule:evenodd;stroke:url(#linearGradient8527);stroke-width:1.32292;stroke-dasharray:none;paint-order:markers fill stroke"
+         class="powerclip"
+         d="M -5,-5 H 105 V 105 H -5 Z m 19.33987,93.819696 c 2.111745,0.726432 3.123988,0.748009 35.624769,0.760154 32.843576,0.01225 33.492834,-0.0015 35.737295,-0.757622 2.713119,-0.91399 4.82383,-2.301824 7.05028,-4.635746 2.176481,-2.281576 3.171209,-3.972459 4.086141,-6.945786 0.693389,-2.253602 0.751808,-3.266318 0.644289,-11.177558 L 97.364373,57.363707 95.975175,54.454383 C 93.532703,49.339153 88.678025,45.490043 83.434724,44.511484 82.193273,44.279791 69.750921,44.136932 50.813528,44.136932 H 20.199254 l -1.842955,-0.931619 c -1.121597,-0.566973 -2.280444,-1.551356 -2.960661,-2.51495 -1.099503,-1.557443 -1.11977,-1.671658 -1.240896,-6.985817 -0.07403,-3.246588 0.04146,-5.953345 0.289348,-6.782888 0.54213,-1.814205 1.986094,-3.487874 3.885934,-4.504152 l 1.536621,-0.821979 h 30.179409 30.179404 l 1.778135,1.045208 c 2.104152,1.236866 3.60934,3.344172 3.891571,5.448389 l 0.203459,1.516986 h 5.726041 5.725999 V 27.2175 c 0,-6.336676 -4.220969,-12.71006 -10.33608,-15.606715 L 84.696464,10.417972 H 50.046054 15.395638 l -2.538095,1.202152 c -3.6010856,1.705637 -7.0023046,5.069423 -8.7594025,8.66297 L 2.7277314,23.08587 2.6050965,31.924429 c -0.134011,9.663335 0.064241,11.078776 2.054569,14.668466 1.371097,2.472907 4.7637969,5.812266 7.1161015,7.004272 4.114774,2.08489 3.993145,2.078276 36.966235,2.086478 20.241257,0.0051 30.840333,0.139385 31.789262,0.402883 1.737389,0.482447 4.056491,2.511058 4.898051,4.284496 0.517018,1.089541 0.602828,2.282722 0.504028,7.006159 -0.114649,5.480121 -0.157109,5.75034 -1.13538,7.226935 -0.558929,0.843674 -1.81642,2.004293 -2.79437,2.579156 l -1.778135,1.045204 H 50.046054 19.866645 L 18.206571,77.297015 C 16.23127,76.188702 14.443032,73.79136 14.123732,71.823477 l -0.230294,-1.419289 -5.7220635,-0.103097 -5.722038,-0.103098 0.1592,3.329877 c 0.1388,2.902873 0.333587,3.682714 1.5190791,6.081387 2.2295369,4.511188 5.7305829,7.668768 10.2122544,9.210439 z" />
+    </clipPath>
+  </defs>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#ffffff;fill-opacity:0.99644125;fill-rule:evenodd;stroke-width:3;paint-order:markers fill stroke;stroke:#ffffff;stroke-opacity:1;stroke-dasharray:none"
+       id="rect3970"
+       width="100"
+       height="100"
+       x="0"
+       y="0"
+       clip-path="url(#clipPath12091)"
+       inkscape:path-effect="#path-effect12095"
+       d="M 0,0 H 100 V 100 H 0 Z" />
+  </g>
+</svg>
