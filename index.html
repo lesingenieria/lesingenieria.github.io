@@ -18,11 +18,11 @@
     <title>LES Ingeniería</title>
 </head>
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="10">
-    <header class="w-100 d-flex justify-content-center" style="opacity:0">
+    <header class="w-100 d-flex justify-content-center">
         <nav id="nav" class="navbar ps-3 py-3 navbar-expand-lg bg-transparent navbar-light fixed-top" style="transition: all 0.4s">
             <div class="container">
               <a class="navbar-brand" href="#">
-                <img id="logonav" src="static/img/leslogovector.svg" alt="Logo" height="60" class="d-inline-block align-text-top" style="transition: all 0.4s">
+                <img id="logonav" src="static/img/leslogovector.svg" alt="Logo" height="0" class="d-inline-block align-text-top" style="transition: all 0.2s">
               </a>
               <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                 <span class="navbar-toggler-icon"></span>
@@ -32,7 +32,7 @@
                   <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="d-none d-lg-block offcanvas-body">
-                  <ul id="menu" class="navbar-nav justify-content-end ms-5 flex-grow-1 pe-3" style="transition: all 0.2s ease">
+                  <ul id="menu" class="navbar-nav justify-content-center ms-5 flex-grow-1 pe-3" style="transition: all 0.2s ease">
                     <li class="nav-item mx-4">
                       <a class="nav-link" href="us.html">LES</a>
                     </li>
@@ -79,7 +79,7 @@
           </nav>
     </header>
 
-    <section id="portada" class="bg-transparent m-0" style="height:100vh">
+    <section id="portada" class="m-0 position-fixed top-0 start-0 h-100 w-100" style="z-index:1000; background-color: white; transition: opacity 0.5s ease-out">
       <div class="container h-100 d-flex justify-content-center align-items-center position-relative">
         <svg version="1.1" id="svg9" class="w-50" viewBox="0 0 1500 500" sodipodi:docname="leslogovector.svg" inkscape:version="1.2.2 (732a01da63, 2022-12-09)" xmlns:inkscape="https://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="https://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:xlink="https://www.w3.org/1999/xlink" xmlns="https://www.w3.org/2000/svg" xmlns:svg="https://www.w3.org/2000/svg">
           <defs id="defs13">
@@ -99,44 +99,50 @@
             <circle style="fill: rgb(0, 0, 200); fill-opacity: 1; stroke-width: 1.28073;" id="path330-1" cx="130.30846" cy="354.50037" r="51.49564" class="svg-elem-4"></circle>
           </g>
         </svg>
-        <p class="position-absolute bottom-0 mb-5 text-red" style="font-size:1rem">Desliza para conocernos</p>
+        <p class="position-absolute bottom-0 mb-5 textup" style="font-size:1rem">Bienvenido</p>
       </div>
     </section>
 
-    <section id="inicio" class="bg-white m-0 w-100" style="height: 100vh; ">
-
-      <div class="d-flex flex-column w-100 h-100 justify-content-center align-items-center px-5 mt-2">
+    <section id="inicio" class="bg-white h-100 w-100 d-flex align-items-center position-relative" style="min-height: 100vh">
+      
+      <a class="position-absolute top-0 start-50 translate-middle-x p-3 d-lg-none" href="#">
+        <img id="logonav" src="static/img/leslogovector.svg" alt="Logo" height="35" class="d-inline-block align-text-top" style="transition: all 0.2s">
+      </a>
+      <div class="d-flex flex-column w-100 h-100 justify-content-center align-items-center">
 
         <div  class="d-flex align-items-center w-100 justify-content-center">
-          <div id="puntos" class="d-flex flex-column justify-content-center">
+
+          <div id="puntos" class="d-flex flex-lg-column justify-content-center" style="max-width: 75%;"> 
             <div style="flex-grow: 1;" class="d-flex justify-content-center align-items-center position-relative overflow-hidden" >
               <video  class="position-absolute h-100 top-50 start-50 translate-middle" muted loop autoplay poster="static/img/redposter.png">
                 <source src="static/img/red.mp4" type="video/mp4">
               </video>
               <img src="static/img/redposter.png" class="w-100 p-0 m-0 position-absolute h-100 top-50 start-50 translate-middle d-block d-lg-none">
-              <img src="static/img/pointinv.svg" class="w-100 p-0 m-0" style="z-index:1; object-fit: cover;">
+              <img src="static/img/pointinv.svg" class="p-0 m-0" style="z-index:1; object-fit: cover; min-width:50%; max-width: 100%">
+
             </div>
             <div style="flex-grow: 1" class="d-flex justify-content-center align-items-center position-relative overflow-hidden">
               <video class="position-absolute h-100 bottom-0 start-50 translate-middle-x d-none d-lg-block" muted loop autoplay poster="static/img/greenposter.png">
                 <source src="static/img/green.mp4" type="video/mp4">
               </video>
               <img src="static/img/greenposter.png" class="w-100 p-0 m-0 position-absolute h-100 top-50 start-50 translate-middle d-block d-lg-none">
-              <img src="static/img/pointinv.svg" class="w-100 p-0 m-0" style="z-index:1; object-fit: cover;">
+              <img src="static/img/pointinv.svg" class="p-0 m-0" style="z-index:1; object-fit: cover; min-width:50%; max-width: 100%">
+
             </div>
             <div style="flex-grow: 1" class="d-flex justify-content-center align-items-center position-relative overflow-hidden">
               <video class="position-absolute h-100 bottom-0 start-50 translate-middle-x d-none d-lg-block" muted loop autoplay poster="static/img/blueposter.png">
                 <source src="static/img/blue.mp4" type="video/mp4">
               </video>
               <img src="static/img/blueposter.png" class="w-100 p-0 m-0 position-absolute h-100 top-50 start-50 translate-middle d-block d-lg-none">
-              <img src="static/img/pointinv.svg" class="w-100 p-0 m-0" style="z-index:1; object-fit: cover;">
+              <img src="static/img/pointinv.svg" class="p-0 m-0" style="z-index:1; object-fit: cover; min-width:50%; max-width: 100%">
             </div>
           </div>
 
-          <div id="letras" class="justify-content-center align-items-center position-relative overflow-hidden d-none d-lg-flex" style="max-width: 75%">
-              <video style="max-width:100%" class="position-absolute w-100 bottom-0 start-50 translate-middle-x" loop muted autoplay poster="static/img/waterbgposter.png">
+          <div id="letras" class="justify-content-center align-items-center position-relative overflow-hidden d-none d-lg-flex" style="max-width: 60%">
+              <video style="max-width:100%; opacity:0" class="position-absolute w-100 bottom-0 start-50 translate-middle-x" loop muted autoplay poster="static/img/waterbgposter.png">
                 <source src="static/img/waterbg.mp4" type="video/mp4">
               </video>
-              <img src="static/img/waterbgposter.png" class="p-0 m-0 position-absolute h-100 top-50 start-0 translate-middle d-block d-lg-none">
+              <img src="static/img/waterbgposter.png" class="p-0 m-0 position-absolute h-100 top-50 start-0 translate-middle d-block d-lg-none" style="opacity:0">
               <div class="flex-column flex-lg-row justify-content-center align-items-center w-100 d-none d-lg-flex">
                 <img src="static/img/linv.svg" class="p-0 m-0" style="flex-grow:1; z-index:1; width:30%">
                 <img src="static/img/einv.svg" class="p-0 m-0" style="flex-grow:1; z-index:1; width:30%">   
@@ -146,7 +152,7 @@
 
         </div>
 
-          <div class="mt-3 pt-5 textup text-center">
+          <div id="subtitle" class="mt-3 mx-3 pt-5 text-center">
              <h1 class="mb-5 text-end d-inline" style="font-weight: 300; z-index:1; color:black">Conectamos la tecnología con tu </h1>
              <h1 class="word text-red d-block" style="color:var(--main-red); font-weight: 500">NEGOCIO</h1>
           </div>
@@ -162,10 +168,10 @@
 
       <div class="container row h-100 mt-5 mx-0">
         <img class="col-12 col-md-6" height="350" src="/static/img/servicesimg.svg">
-        <div class="col-12 col-md-6 d-flex flex-column justify-content-around" height="400">
+        <div class="col-12 col-md-6 d-flex flex-column justify-content-around align-items-start" height="400">
           <h1>Servicios y soluciones adaptados a tu necesidad</h1>
           <p class=" desc">Ofrecemos servicios y soluciones tecnológicas adaptados a tus necesidades específicas. Nuestro objetivo es ayudarte a aprovechar al máximo la era digital y alcanzar el éxito en un mundo cada vez más tecnológico.</p>
-          <button class="btn btn-red-outline mt-3 w-50">VER SERVICIOS</button>
+          <button class="btn btn-red-outline mt-3">VER SERVICIOS</button>
       </div>
     </div>
   </div>
@@ -179,10 +185,10 @@
         </div>
   
         <div class="row h-100 mt-5 mx-0">
-          <div class="col-md-6 d-flex flex-column justify-content-around" height="400">
+          <div class="col-md-6 d-flex flex-column justify-content-around align-items-start" height="400">
             <h1>Hermes Bolipesk</h1>
             <p class=" desc">Hermes Bolipesk es una plataforma web de gestión y visualización de datos de vehículos de transporte, desarrollada exclusivamente para la empresa Bolipesk. Integra también un sistema de localización de vehículos en tiempo real. </p>
-            <button class="btn btn-red-outline mt-3 w-50">VER MÁS PROYECTOS</button>
+            <button class="btn btn-red-outline mt-3">VER MÁS PROYECTOS</button>
         </div>
 
         <img class="col-md-6" height="350" src="/static/img/HermesLogo.svg">
@@ -197,10 +203,10 @@
   
         <div class="row h-100 mt-5 mx-0">
           <img class="col-md-6" height="300" src="/static/img/joinusimg.svg">
-          <div class="col-md-6 d-flex flex-column justify-content-around" height="400">
+          <div class="col-md-6 d-flex flex-column justify-content-around align-items-start" height="400">
             <h1>Crece con nosotros y proyecta tu desarrollo</h1>
             <p class=" desc">¿A qué estás esperando?</p>
-            <button class="btn btn-red-outline mt-3 w-50">ÚNETE</button>
+            <button class="btn btn-red-outline mt-3">ÚNETE</button>
         </div>
 
     </section>
@@ -223,8 +229,8 @@
       </div>
     </section>
     
-    <div class="container-fluid m-0 p-0">
-      <img class="w-100 m-0" style="height: 30vh" src="static/img/wavesfooter.svg">
+    <div class="waves container-fluid m-0 p-0">
+      <img class="w-100 m-0" src="static/img/wavesfooter.svg">
     </div>
 
     <footer class="pb-3" style="background-color: var(--main-red)">
@@ -256,7 +262,7 @@
 
 
 <script>
-  let portada = false;
+  let loading = true;
   const word = document.querySelector(".word");
   const wordsToChange = ["NEGOCIO", "HOGAR", "PROYECTO", "LOCAL", "IDEA", "EQUIPO", "OFICINA"];
   const classToChange = ["text-red"]
@@ -305,27 +311,39 @@
 
 
   document.addEventListener("scroll", function(e){
-    console.log(window.scrollY);
-    if(window.scrollY >= (iniciosection.offsetTop-20) && !portada){
-      portadasection.classList.add("d-none");
-      window.scrollTo(0, 0);
-      portada=true;
-      header.style.opacity = 1;
-    }
-    if(window.scrollY <= 10){
-      if(!portada){
-        window.scrollTo(0, iniciosection.offsetTop);
+    if(!loading){
+      if(window.scrollY <= 10){
+        nav.classList.replace("bg-light", "bg-transparent");
+        nav.classList.remove("shadow");
+        logonav.height = "0";
+        menu.classList.replace("justify-content-end", "justify-content-center");
+      }else{
+        nav.classList.replace("bg-transparent", "bg-light");
+        nav.classList.add("shadow");
+        logonav.height = "40";
+        menu.classList.replace("justify-content-center", "justify-content-end");
       }
-      nav.classList.replace("bg-light", "bg-transparent");
-      nav.classList.remove("shadow");
-      logonav.height = "0";
-      menu.classList.replace("justify-content-end", "justify-content-center");
-    }else{
-      nav.classList.replace("bg-transparent", "bg-light");
-      nav.classList.add("shadow");
-      logonav.height = portada?"45":"0";
-      menu.classList.replace("justify-content-center", "justify-content-end");
     }
+  });
+
+  addEventListener("load", function(e){
+    portadasection.style.opacity = 0;
+    portadasection.style.zIndex = -10;
+    loading=false;
+
+    var puntos = [...document.querySelectorAll('#puntos > div')];
+
+    // Aplicar la animación a cada elemento con un retraso escalonado
+    i = 0;
+    for (punto of puntos.reverse()) {
+      punto.style.animation = 'slideIn 2s ease-in-out forwards';
+      punto.style.animationFillMode = "both";0
+      punto.style.animationDelay = (i * 0.3) + 's';
+      i++;
+    }
+
+    document.querySelector('#subtitle').classList.add("textup");
+    document.querySelector('#letras > video').classList.add("fadein");
   });
 
   $(document).ready(function(){
