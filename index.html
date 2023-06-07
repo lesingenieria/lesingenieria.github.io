@@ -13,7 +13,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700;900&family=Roboto:wght@300;500;700;900&display=swap" rel="stylesheet">    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>    
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="static/css/styles.css">
     <title>LES Ingeniería</title>
 </head>
@@ -37,7 +36,7 @@
                       <a class="nav-link" href="us.html">LES</a>
                     </li>
                     <li class="nav-item mx-4">
-                      <a class="nav-link" href="#servicios">Servicios</a>
+                      <a class="nav-link" href="servicios.html">Servicios</a>
                     </li>
                     <li class="nav-item mx-4 dropdown">
                       <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" href="#">Proyectos</a>
@@ -58,7 +57,7 @@
                 <div class="d-lg-none d-block offcanvas-body">
                   <ul class="navbar-nav justify-content-center align-items-center">
                     <li class="nav-item">
-                      <h2 style="font-weight: 700;"><a class="nav-link" href="#">SERVICIOS</a></h2>
+                      <h2 style="font-weight: 700;"><a class="nav-link" href="servicios.html">SERVICIOS</a></h2>
                     </li>
                     <li class="nav-item">
                       <h2 style="font-weight: 700;"><a class="nav-link" href="us.html">LES</a></h2>
@@ -108,7 +107,7 @@
       <a class="position-absolute top-0 start-50 translate-middle-x p-3 d-lg-none" href="#">
         <img id="logonav" src="static/img/leslogovector.svg" alt="Logo" height="35" class="d-inline-block align-text-top" style="transition: all 0.2s">
       </a>
-      <div class="d-flex flex-column w-100 h-100 justify-content-center align-items-center">
+      <div class="d-flex flex-column mt-5 w-100 h-100 justify-content-center align-items-center">
 
         <div  class="d-flex align-items-center w-100 justify-content-center">
 
@@ -139,14 +138,17 @@
           </div>
 
           <div id="letras" class="justify-content-center align-items-center position-relative overflow-hidden d-none d-lg-flex" style="max-width: 60%">
-              <video style="max-width:100%; opacity:0" class="position-absolute w-100 bottom-0 start-50 translate-middle-x" loop muted autoplay poster="static/img/waterbgposter.png">
-                <source src="static/img/waterbg.mp4" type="video/mp4">
-              </video>
+              <div style="width: 99%; height: 98%; max-width:99%; max-height:98%" class="position-absolute top-50 start-50 translate-middle overflow-hidden d-flex justify-content-center align-items-center">
+                <video style="opacity:0;" loop muted autoplay poster="static/img/waterbgposter.png">
+                  <source src="static/img/waterbg.mp4" type="video/mp4">
+                </video>
+              </div>
+              
               <img src="static/img/waterbgposter.png" class="p-0 m-0 position-absolute h-100 top-50 start-0 translate-middle d-block d-lg-none" style="opacity:0">
               <div class="flex-column flex-lg-row justify-content-center align-items-center w-100 d-none d-lg-flex">
-                <img src="static/img/linv.svg" class="p-0 m-0" style="flex-grow:1; z-index:1; width:30%">
-                <img src="static/img/einv.svg" class="p-0 m-0" style="flex-grow:1; z-index:1; width:30%">   
-                <img src="static/img/sinv.svg" class="p-0 m-0" style="flex-grow:1; z-index:1; width:30%">
+                <img src="static/img/linv.svg" class="p-0 m-0" style="flex-grow:1; z-index:1; width:33%">
+                <img src="static/img/einv.svg" class="p-0 m-0" style="flex-grow:1; z-index:1; width:33%">   
+                <img src="static/img/sinv.svg" class="p-0 m-0" style="flex-grow:1; z-index:1; width:33%">
               </div>
           </div>
 
@@ -171,7 +173,7 @@
         <div class="col-12 col-md-6 d-flex flex-column justify-content-around align-items-start" height="400">
           <h1>Servicios y soluciones adaptados a tu necesidad</h1>
           <p class=" desc">Ofrecemos servicios y soluciones tecnológicas adaptados a tus necesidades específicas. Nuestro objetivo es ayudarte a aprovechar al máximo la era digital y alcanzar el éxito en un mundo cada vez más tecnológico.</p>
-          <button class="btn btn-red-outline mt-3">VER SERVICIOS</button>
+          <button class="btn btn-red-outline mt-3" onclick="location.href='servicios.html'">VER SERVICIOS</button>
       </div>
     </div>
   </div>
@@ -217,13 +219,13 @@
           <small class="mb-2 text-red">CLIENTES QUE HAN MEJORADO SU NEGOCIO CON NOSOTROS</small>
           <h1 class="title" style="font-weight: 700">Casos de éxito</h1>
         </div>
-        <div class="companiesslider" style="height:30vh">
-          <div class="slide"><img src="static/img/bolipesklogo.png"></div>
-          <div class="slide"><img src="static/img/mazueloslogo.png"></div>
-          <div class="slide"><img src="static/img/inmueblesurlogo.png"></div>
-          <div class="slide"><img src="static/img/gtdlogo.png"></div>
-          <div class="slide"><img src="static/img/autosurlogo.png"></div>
-          <div class="slide"><img src="static/img/ucclogo.png"></div>
+        <div class="row row-cols-2 row-cols-lg-4 g-0 grayscale">
+          <div class="col"><div class="w-100 h-100 p-5 d-flex align-items-center"><img class="w-100" src="static/img/bolipesklogo.png"></div></div>
+          <div class="col"><div class="w-100 h-100 p-5 d-flex align-items-center"><img class="w-100" src="static/img/mazueloslogo.png"></div></div>
+          <div class="col"><div class="w-100 h-100 p-5 d-flex align-items-center"><img class="w-100" src="static/img/inmueblesurlogo.png"></div></div>
+          <div class="col"><div class="w-100 h-100 p-5 d-flex align-items-center"><img class="w-100" src="static/img/gtdespanalogo.png"></div></div>
+          <div class="col"><div class="w-100 h-100 p-5 d-flex align-items-center"><img class="w-100" style="filter: brightness(0.5)" src="static/img/autosurlogo.png"></div></div>
+          <div class="col"><div class="w-100 h-100 p-5 d-flex align-items-center"><img class="w-100" src="static/img/ucclogo.png"></div></div>
         </div>
       </div>
     </section>
@@ -235,28 +237,25 @@
     <footer class="pb-3" style="background-color: var(--main-red)">
       <div class="container">
         <div class="row">
-          <div class="col-12 col-md-6 d-flex justify-content-start">
+          <div class="col-12 col-lg-6 d-flex justify-content-start">
               <img src="static/img/leslogovector.svg" height="40" style="filter: brightness(0) invert(1)">
           </div>
-          <div class="col-12 col-md-6 text-white fs-4 d-flex align-items-end justify-content-end">
+          <div class="col-12 col-lg-6 text-white fs-4 d-flex align-items-end justify-content-end">
             <a href="#"><i class="bi bi-instagram me-3"></i></a>
             <a href="#"><i class="bi bi-telephone"></i></a>
           </div>
-          <div class="col-12 col-md-6 text-white d-flex align-items-end justify-content-start">
-            <p class="col-12 col-md-6 text-white ps-2 m-0 text-end text-md-start">©LES Ingeniería 2023</p>
+          <div class="col-12 col-lg-6 text-white d-flex align-items-end justify-content-start">
+            <p class="col-12 col-lg-6 text-white ps-2 m-0 text-end text-lg-start">©LES Ingeniería 2023</p>
           </div>
-          <div class="row col-12 col-md-6 pe-0 d-flex justify-content-end align-items-end m-0">
-            <div class="col-md-6 text-end">
-              <a class="col-12 col-md-4 text-center pe-3 border border-top-0 border-start-0 border-bottom-0" href="#">Política de cookies</a>
-              <a class="col-12 col-md-4 text-center ps-3" href="#">Aviso legal</a>
+          <div class="row col-12 col-lg-6 pe-0 d-flex justify-content-end align-items-end m-0">
+            <div class="col-lg-12 text-end">
+              <a class="col-12 col-lg-4 text-center pe-3 border border-top-0 border-start-0 border-bottom-0" href="#">Política de cookies</a>
+              <a class="col-12 col-lg-4 text-center ps-3" href="#">Aviso legal</a>
             </div>
           </div>
         </div>
       </div>
     </footer>
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </body>
 
 
@@ -342,30 +341,8 @@
     }
 
     document.querySelector('#subtitle').classList.add("textup");
-    document.querySelector('#letras > video').classList.add("fadein");
+    document.querySelector('#letras video').classList.add("fadein");
   });
 
-  $(document).ready(function(){
-    $('.companiesslider').slick({
-      slidesToShow: 4,
-      slidesToScroll: 1,
-      autoplay: true,
-      autoplaySpeed: 2000,
-      arrows: false,
-      dots: false,
-      pauseOnHover: false,
-      responsive: [{
-					breakpoint: 768,
-					settings: {
-						slidesToShow: 3
-					}
-				}, {
-					breakpoint: 520,
-					settings: {
-						slidesToShow: 1
-					}
-				}]
-    });
-  });
 </script>
 </html>
