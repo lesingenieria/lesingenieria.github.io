@@ -1,0 +1,45 @@
+---
+permalink: /404.html
+layout: error
+---
+
+<style type="text/css" media="screen">
+  .container {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    max-width: 100%;
+    text-align: center;
+    min-height:100vh;
+    height:100vh;
+  }
+  h1 {
+    margin: 30px 0;
+    font-size: 4em;
+    line-height: 1;
+    letter-spacing: -1px;
+  }
+  .backimg{
+    background-image: url('{{"../static/img/404.svg" | prepend: site.baseurl }}');
+    background-size: fill;
+    background-repeat: no-repeat;
+    background-position:center;
+    height:100%;
+    width:100%;
+  }
+
+  .link:hover{
+    color: #c80000;
+  }
+</style>
+
+<div class="container">
+  <div style="display:flex; justify-content: center; align-items:center; width:100%; margin-top: 50px">  
+    <h1 style="margin-right: 50px;">404</h1>
+    <div style="text-align: start">
+    <p><strong>La página que buscas no existe :(</strong></p>
+    <p class="link" style="cursor: pointer" onclick="location.href = '/'">Volver al inicio</p>
+  </div>
+  </div>
+  <div class="backimg"></div>
+</div>

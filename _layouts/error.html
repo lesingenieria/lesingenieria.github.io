@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="es">
+{% include head.html %}
+
+<body>
+    <div style="position:absolute; top: 0; left:0; margin: 50px;">
+        <img src='{{"../static/img/leslogovector.svg" | prepend: site.baseurl }}' height="60" style="filter: brightness(0)">
+    </div> 
+
+    {{ content }}
+
+</body>
+</html>
