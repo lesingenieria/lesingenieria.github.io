@@ -57,10 +57,10 @@ layout: default
                     <div class="position-relative d-flex flex-column justify-content-start align-items-start" style="background:white;">
                         <h3 class="text-start mb-3 w-100">Cuentanos tu idea rellenando el siguiente formulario
                         </h3>
-                        <form class="d-flex flex-column w-100">
-                            <input type="text" name="nombre" placeholder="Tu nombre"/>
-                            <input type="email" name="email" placeholder="Tu email"/>
-                            <textarea rows="5" cols="50" type="text" name="content" placeholder="Cuentanos tu idea"></textarea>
+                        <form id="form" action="https://formspree.io/f/xeqwyolz" method="POST" class="d-flex flex-column w-100">
+                            <input type="text" name="nombre" placeholder="Tu nombre" required/>
+                            <input type="email" name="email" placeholder="Tu email" required/>
+                            <textarea rows="5" cols="50" type="text" name="content" placeholder="Cuentanos tu idea" required></textarea>
                             <button type="submit" class="btn btn-red-outline">Enviar</button>
                         </form>
                     </div>
@@ -68,7 +68,17 @@ layout: default
             </div>
         </div>
     </section>
-
+    <script>
+        const form = document.querySelector("#form");
+        const reset= () => {
+            form.reset();
+        }
+        
+        window.addEventListener('beforeunload', function(e){
+            reset();
+        })
+        
+    </script>
     <section style="height:300px; width: 100%; padding:0; padding-bottom: 50px">
         <div class="container-fluid p-0">
             <iframe style="width:100%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3220.1978888960984!2d-5.4340824244728605!3d36.186068872428606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0ceb00e3facf0f%3A0xb2ef32a7c94c7ecc!2sAzabache%20Centro%20de%20Negocios!5e0!3m2!1ses!2ses!4v1686589235334!5m2!1ses!2ses" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
