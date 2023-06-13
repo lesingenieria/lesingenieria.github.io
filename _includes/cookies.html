@@ -66,8 +66,8 @@
 function aceptar_cookies(){
     var expire=new Date();
     expire=new Date(expire.getTime()+7776000000);
-    document.cookie="cookies_surestao=aceptada; expires="+expire;
- 
+    document.cookie="cookies_surestao=aceptada; expires="+expire+";path=/";
+
     var visit=GetCookie("cookies_surestao");
  
     if (visit==1){
