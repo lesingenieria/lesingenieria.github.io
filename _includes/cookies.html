@@ -11,14 +11,14 @@
     margin: auto;
     position: relative;
     top: 0px;
-    height: 58px;
+    height: auto;
     width: 100%;
+    padding: 10px 20px;
     text-align:center;
     background-color: #eeeeee;
 }
 #infobox p {
     display: inline;
-    line-height:58px;
     font-size:12px;
     text-align:center;
 }
@@ -37,7 +37,8 @@
 <div id="overbox">
     <div id="infobox">
         <p>Usamos cookies para obtener datos estadísticos de la navegación de sus usuarios. Si continúas navegando consideramos que aceptas su uso.</p>
-        <p class="link ms-3" onclick="location.href = '/politicaprivacidad'">Más información</p>
+        <br>
+        <p class="link" onclick="location.href = '/politicaprivacidad'">Más información</p>
         <p onclick="aceptar_cookies();" class="link ms-3">Aceptar</p>
     </div>
 </div>
