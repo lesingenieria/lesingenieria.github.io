@@ -52,13 +52,8 @@ layout: default
             </div>
         </div>
 
-        <div class="w-100 mt-5 position-relative overflow-hidden" style="min-height: 60vh; height:60vh">
-            <div class="container position-absolute top-50 start-50 translate-middle text-center" style="z-index:2">
-                <p style="color:white">Nos apasionan los nuevos retos</p>
-                <h2 class="plx" style="z-index: 100; color:white;" data-parallax-speed="0.4">Cuentanos tu idea</h2>
-            </div>
-            <img class="position-absolute bottom-0 start-50 translate-middle-x me-5" style="height: 100%; z-index: 0;" src='{{"/static/img/moonlight.svg" | prepend: site.baseurl }}' alt="Iluminacion Portada">
-        </div>
+        {% include footerservice.html %}
+
     </section>
     <script src='{{"/static/js/menu.js" | prepend: site.baseurl }}'></script>
 </body>
