@@ -1,0 +1,87 @@
+<style>
+    #overbox {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 999999;
+    display: block;
+}
+#infobox {
+    margin: auto;
+    position: relative;
+    top: 0px;
+    height: 58px;
+    width: 100%;
+    text-align:center;
+    background-color: #eeeeee;
+}
+#infobox p {
+    display: inline;
+    line-height:58px;
+    font-size:12px;
+    text-align:center;
+}
+#infobox p a {
+    margin-right:5px;
+    text-decoration: underline;
+}
+.link{
+    color: #c80000;
+    cursor: pointer;
+}
+.link:hover{
+    color: #00c8c8;
+}
+</style>
+<div id="overbox">
+    <div id="infobox">
+        <p>Usamos cookies para obtener datos estadísticos de la navegación de sus usuarios. Si continúas navegando consideramos que aceptas su uso.</p>
+        <p class="link ms-3" onclick="location.href = '/politicaprivacidad'">Más información</p>
+        <p onclick="aceptar_cookies();" class="link ms-3">Aceptar</p>
+    </div>
+</div>
+<script>
+
+    function GetCookie(name) {
+        var arg=name+"=";
+        var alen=arg.length;
+        var clen=document.cookie.length;
+        var i=0;
+ 
+    while (i<clen) {
+        var j=i+alen;
+ 
+        if (document.cookie.substring(i,j)==arg)
+            return "1";
+        i=document.cookie.indexOf(" ",i)+1;
+        if (i==0)
+            break;
+    }
+ 
+    return null;
+}
+ 
+function aceptar_cookies(){
+    var expire=new Date();
+    expire=new Date(expire.getTime()+7776000000);
+    document.cookie="cookies_surestao=aceptada; expires="+expire;
+ 
+    var visit=GetCookie("cookies_surestao");
+ 
+    if (visit==1){
+        popbox3();
+    }
+}
+ 
+function comprobarCookie() {
+    var visit=GetCookie("cookies_surestao");
+    if (visit==1){ popbox3(); }
+};
+ 
+function popbox3() {
+    document.querySelector('#overbox').classList.add("d-none");
+}
+
+comprobarCookie();
+</script>
