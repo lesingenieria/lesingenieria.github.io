@@ -45,6 +45,10 @@ layout: cartaLayout
     let actualPage = 0;
     let data;
 
+    const init = () => {
+        openCarta();
+    }
+
     const getData = async () => {
         const res = await fetch("./data.txt");
         const data = await res.text();
@@ -52,8 +56,8 @@ layout: cartaLayout
     };
 
     const openCarta = async () => {
-        tituloContainer.classList.replace("d-flex", "d-none");
-        container.classList.replace("d-none", "d-flex");
+        //tituloContainer.classList.replace("d-flex", "d-none");
+        //container.classList.replace("d-none", "d-flex");
         data = await getData();
         await loadCarta(data, actualPage);
     };
@@ -167,6 +171,7 @@ const resetCarta = () => {
     items.innerHTML = "";
     imageSeccion.innerHTML = "";
 }
+init();
 
 setInterval(changePage, 15000);
     
