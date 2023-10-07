@@ -1,0 +1,173 @@
+---
+title: Nuestra Carta - Bora Pub
+permalink: /bora/carta
+layout: cartaLayout
+---
+<style>
+    titulo{
+        font-weight: 700;
+        font-size: 3rem;
+        text-shadow: 5px 5px 8px black;
+        color:white;
+        font-family: "Caveat";
+    }
+</style>
+<section id="titulo" class="container-fluid position-relative d-flex justify-content-center align-items-center w-100 text-white" style="min-height: 100vh; max-height:100vh; background-image: url('./img/borabackground.png'); background-size: cover">
+    <img src="./img/logowhite.svg" class="w-75 fade-in" style="filter: drop-shadow(5px 5px 3px #333)">
+    <div class="position-absolute bottom-0 start-0 d-flex flex-column justify-content-between align-items-center w-100">
+        <button id="btnOpenCarta" class="btn btn-outline-light mb-5"> NUESTRA CARTA </button>
+    </div>
+</section>
+
+<section id="contenedor" class="position-relative container-fluid d-none flex-column py-3" style="min-height: 100vh; max-height: 100vh; background-color: #334">
+    <div id="imageSeccion" class="d-flex flex-column mb-2 fade-in justify-content-center align-items-center text-center" style="height:200px">
+
+    </div>
+    <div id="tituloSeccion" class="d-flex flex-column mt-2 py-2 w-100 justify-content-center text-center text-white">
+
+    </div>
+    <div id="items" class="py-2 text-white">
+
+    </div>
+    <div class="w-100 container-fluid position-absolute bottom-0 start-50 translate-middle-x mb-3 d-flex justify-content-between align-items-center">
+        <object id="logo"  width="100" data="./img/logowhite.svg"></object>
+        <object id="qr"  width="100" data="./img/qrbora.svg"></object>
+    </div>
+    
+</section>
+
+<script>
+    const container = document.querySelector("#contenedor");
+    const tituloSeccion = container.querySelector("#tituloSeccion");
+    const imageSeccion = container.querySelector("#imageSeccion");
+    const items = container.querySelector("#items");
+    const tituloContainer = document.querySelector("#titulo");
+    let actualPage = 0;
+    let data;
+
+    const getData = async () => {
+        const res = await fetch("./data.txt");
+        const data = await res.text();
+        return data.replace(/(\r\n|\n|\r)/gm,"").split("&");
+    };
+
+    const openCarta = async () => {
+        tituloContainer.classList.replace("d-flex", "d-none");
+        container.classList.replace("d-none", "d-flex");
+        data = await getData();
+        await loadCarta(data, actualPage);
+    };
+
+    const loadCarta = async (data, page) => {
+        const dataToLoad = data[page].split(',');
+        console.log(dataToLoad);
+        const title = dataToLoad.filter(w => w.includes("-t "))[0].replace("-t ", "");
+        const subtitle = dataToLoad.filter(w => w.includes("-s "))[0]?.replace("-s ", "");
+        const searchword = dataToLoad.filter(w => w.includes("-search "))[0]?.replace("-search ", "");
+        const image = await getImageFromAPI(searchword);
+        creatingAndAppendElem("h1", title, tituloSeccion);
+        dataToLoad.forEach(e => {
+            if(e.includes("-p")){
+                const d = e.split("-p");
+                createItem(d[0], d[1], 'h6');
+            }
+            if(e.includes("-f")){
+                const d = e.replace("-f", "");
+                createItem(d, "", 'small');
+            }
+        })
+        if(subtitle != undefined) creatingAndAppendElem("titulo", subtitle, imageSeccion);
+        container.style.backgroundColor = image.color;
+        //items.style.backgroundColor = invertColor(image.color)+"33";
+        //tituloSeccion.style.backgroundColor = invertColor(image.color)+"33";
+        imageSeccion.style.backgroundImage = "url('"+image.url+"')";
+        imageSeccion.style.backgroundSize = "cover";
+        imageSeccion.style.backgroundPosition = "center";
+        changeColorLogo(invertColor(image.color));
+
+    }
+
+    const creatingAndAppendElem = (type, t, whereAppend) =>{
+        const element = document.createElement(type);
+        const text = document.createTextNode(t);
+        element.appendChild(text);
+        element.classList.add('fade-in');
+        element.style.textShadow = "2px 2px 5px black";
+        whereAppend.appendChild(element);
+        return element;
+    }
+
+    const createItem = (name, price, type) => {
+        const div = document.createElement('div');
+        const nameEl =  document.createElement(type);
+        nameEl.appendChild(document.createTextNode(name));
+        nameEl.classList.add("fw-bold");
+        const priceEl = document.createElement(type);
+        priceEl.appendChild(document.createTextNode(price));
+        div.appendChild(nameEl);
+        div.appendChild(priceEl);
+        div.classList.add("w-100", "d-flex", "justify-content-between", "align-items-center", "px-5", "fade-in");
+        items.appendChild(div);
+    }
+
+    const getImageFromAPI = async (word) => {
+        const result = await fetch("https://api.pexels.com/v1/search?query="+word, 
+            {
+                method:"GET", 
+                headers:{'Authorization':'6WYTjCPGdlTPjsALjjeGnCZhwzGK7xozFG4dg1Ya3qzNKqlSlyQQXx1M'
+            }
+        });
+        const data = await result.json();
+        console.log(data);
+        const photoresult = data.photos.filter(p => p.width-p.height<2000)[0];
+        return {'url': photoresult.src.original, 'color': photoresult.avg_color};
+    }
+
+    function invertColor(hex) {
+    if (hex.indexOf('#') === 0) {
+        hex = hex.slice(1);
+    }
+    if (hex.length === 3) {
+        hex = hex[0] + hex[0] + hex[1] + hex[1] + hex[2] + hex[2];
+    }
+    if (hex.length !== 6) {
+        throw new Error('Invalid HEX color.');
+    }
+    var r = (255 - parseInt(hex.slice(0, 2), 16)).toString(16),
+        g = (255 - parseInt(hex.slice(2, 4), 16)).toString(16),
+        b = (255 - parseInt(hex.slice(4, 6), 16)).toString(16);
+
+    return '#' + padZero(r) + padZero(g) + padZero(b);
+}
+
+function padZero(str, len) {
+    len = len || 2;
+    var zeros = new Array(len).join('0');
+    return (zeros + str).slice(-len);
+}
+    tituloContainer.querySelector("#btnOpenCarta").addEventListener('click', openCarta);
+
+const changeColorLogo = (color) => {
+    document.querySelector('#logo').contentDocument.querySelector("#letterB").style.fill = color;
+    document.querySelector('#logo').contentDocument.querySelector("#letterO").style.fill = color;
+    document.querySelector('#logo').contentDocument.querySelector("#letterR").style.fill = color;
+    document.querySelector('#logo').contentDocument.querySelector("#letterA").style.fill = color;
+    document.querySelector('#logo').contentDocument.querySelector("#logoBora").style.fill = color;
+}
+
+const changePage = () => {
+    actualPage++;
+    if(actualPage>data.length-1) actualPage = 0;
+    resetCarta();
+    loadCarta(data, actualPage);
+};
+
+const resetCarta = () => {
+    tituloSeccion.innerHTML = "";
+    items.innerHTML = "";
+    imageSeccion.innerHTML = "";
+}
+
+setInterval(changePage, 15000);
+    
+</script>

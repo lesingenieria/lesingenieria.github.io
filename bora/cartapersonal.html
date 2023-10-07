@@ -1,0 +1,171 @@
+---
+title: Nuestra Carta - Bora Pub
+permalink: /bora/carta/personal
+layout: cartaLayout
+---
+<style>
+    titulo{
+        font-weight: 700;
+        font-size: 3rem;
+        text-shadow: 5px 5px 8px black;
+        color:white;
+        font-family: "Caveat";
+    }
+</style>
+<section id="titulo" class="container-fluid position-relative d-flex justify-content-center align-items-center w-100 text-white" style="min-height: 100vh; max-height:100vh; background-image: url('../img/borabackground.png'); background-size: cover">
+    <img src="../img/logowhite.svg" class="w-75 fade-in" style="filter: drop-shadow(5px 5px 3px #333)">
+    <div class="position-absolute bottom-0 start-0 d-flex flex-column justify-content-between align-items-center w-100">
+        <button id="btnOpenCarta" class="btn btn-outline-light mb-5"> NUESTRA CARTA </button>
+    </div>
+</section>
+<div id="containerSections">
+    <section id="tituloSection" class="container-fluid position-relative d-none justify-content-center align-items-center w-100 text-white" style="background-image: url('../img/borabackground.png'); background-size: cover">
+        <img src="../img/logowhite.svg" class="w-75 fade-in" style="filter: drop-shadow(5px 5px 3px #333)">
+    </section>    
+</div>
+
+<script>
+    const container = document.querySelector(".contenedor");
+    const tituloContainer = document.querySelector("#titulo");
+    let actualPage = 0;
+    let data;
+
+    const getData = async () => {
+        const res = await fetch("../data.txt");
+        const data = await res.text(); 
+        return data.replace(/(\r\n|\n|\r)/gm,"").split("&");
+    };
+
+    const openCarta = async () => {
+        tituloContainer.classList.replace("d-flex", "d-none");
+        document.querySelector("#tituloSection").classList.replace("d-none", "d-flex");
+        data = await getData();
+        data.forEach(d => cargarSeccion());
+        const secciones = document.querySelectorAll(".contenedor");
+        for(let i = 0; i<data.length; i++){
+            await loadCarta(data, secciones, i);
+        }
+    };
+
+    const cargarSeccion = () => {
+        document.querySelector("#containerSections").innerHTML += 
+        `<section class="contenedor position-relative container-fluid flex-column py-5" style="max-height: 100vh; background-color: #334">
+            <div class="imageSeccion d-flex flex-column mb-2 fade-in justify-content-center align-items-center text-center" style="height:200px">
+            
+            </div>
+            <div class="tituloSeccion d-flex flex-column mt-2 py-2 w-100 justify-content-center text-center text-white">
+            
+            </div>
+            <div class="items py-2 text-white">
+            
+            </div>
+        </section>`;
+
+    }
+
+    const loadCarta = async (data, container, index) => {
+        const tituloSeccion = container[index].querySelector(".tituloSeccion");
+        const imageSeccion = container[index ].querySelector(".imageSeccion");
+
+        const dataToLoad = data[index].split(',');
+        console.log(dataToLoad);
+        const title = dataToLoad.filter(w => w.includes("-t "))[0].replace("-t ", "");
+        const subtitle = dataToLoad.filter(w => w.includes("-s "))[0]?.replace("-s ", "");
+        const searchword = dataToLoad.filter(w => w.includes("-search "))[0]?.replace("-search ", "");
+        const image = await getImageFromAPI(searchword);
+        creatingAndAppendElem("h1", title, tituloSeccion);
+        dataToLoad.forEach(e => {
+            if(e.includes("-p")){
+                const d = e.split("-p");
+                createItem(d[0], d[1], 'h6', container[index]);
+            }
+            if(e.includes("-f")){
+                const d = e.replace("-f", "");
+                createItem(d, "", 'small', container[index]);
+            }
+        })
+        if(subtitle != undefined) creatingAndAppendElem("titulo", subtitle, imageSeccion);
+        container[index].style.backgroundColor = image.color;
+        //items.style.backgroundColor = invertColor(image.color)+"33";
+        //tituloSeccion.style.backgroundColor = invertColor(image.color)+"33";
+        imageSeccion.style.backgroundImage = "url('"+image.url+"')";
+        imageSeccion.style.backgroundSize = "cover";
+        imageSeccion.style.backgroundPosition = "center";
+
+    }
+
+    const creatingAndAppendElem = (type, t, whereAppend) =>{
+        const element = document.createElement(type);
+        const text = document.createTextNode(t);
+        element.appendChild(text);
+        element.classList.add('fade-in');
+        element.style.textShadow = "2px 2px 5px black";
+        whereAppend.appendChild(element);
+        return element;
+    }
+
+    const createItem = (name, price, type, container) => {
+        const div = document.createElement('div');
+        const nameEl =  document.createElement(type);
+        nameEl.appendChild(document.createTextNode(name));
+        nameEl.classList.add("fw-bold");
+        const priceEl = document.createElement(type);
+        priceEl.appendChild(document.createTextNode(price));
+        div.appendChild(nameEl);
+        div.appendChild(priceEl);
+        div.classList.add("w-100", "d-flex", "justify-content-between", "align-items-center", "px-5", "fade-in");
+        container.querySelector(".items").appendChild(div);
+    }
+
+    const getImageFromAPI = async (word) => {
+        const result = await fetch("https://api.pexels.com/v1/search?query="+word, 
+            {
+                method:"GET", 
+                headers:{'Authorization':'6WYTjCPGdlTPjsALjjeGnCZhwzGK7xozFG4dg1Ya3qzNKqlSlyQQXx1M'
+            }
+        });
+        const data = await result.json();
+        console.log(data);
+        const photoresult = data.photos.filter(p => p.width-p.height<2000)[0];
+        return {'url': photoresult.src.original, 'color': photoresult.avg_color};
+    }
+
+    function invertColor(hex) {
+    if (hex.indexOf('#') === 0) {
+        hex = hex.slice(1);
+    }
+    if (hex.length === 3) {
+        hex = hex[0] + hex[0] + hex[1] + hex[1] + hex[2] + hex[2];
+    }
+    if (hex.length !== 6) {
+        throw new Error('Invalid HEX color.');
+    }
+    var r = (255 - parseInt(hex.slice(0, 2), 16)).toString(16),
+        g = (255 - parseInt(hex.slice(2, 4), 16)).toString(16),
+        b = (255 - parseInt(hex.slice(4, 6), 16)).toString(16);
+
+    return '#' + padZero(r) + padZero(g) + padZero(b);
+}
+
+function padZero(str, len) {
+    len = len || 2;
+    var zeros = new Array(len).join('0');
+    return (zeros + str).slice(-len);
+}
+    tituloContainer.querySelector("#btnOpenCarta").addEventListener('click', openCarta);
+
+
+const changePage = () => {
+    actualPage++;
+    if(actualPage>data.length-1) actualPage = 0;
+    resetCarta();
+    loadCarta(data, actualPage);
+};
+
+const resetCarta = () => {
+    //tituloSeccion.innerHTML = "";
+    //items.innerHTML = "";
+    //imageSeccion.innerHTML = "";
+}
+
+</script>
